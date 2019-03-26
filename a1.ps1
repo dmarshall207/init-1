@@ -7,11 +7,11 @@
 #     * run dwnload-git-installer.ps1
 #     * run dwnload-nodejs-binary-x64.ps1
 #     * install git
-#     * reload powershell 
-# add step:  install 'nodejs'
-# add step:  mkdir 'my' -- under 'nodejs'
-#     * run 'b1.ps1'     -- setups up git config
-#     * run 'c1.ps1'     -- clones initial repos under /sto and /sto/nodejs/my
+#     * reload powershell
+#     * run 'b1.ps1'      -- setups up git config
+#     * install 'nodejs'  -- unpack into '/sto' + rename to 'nodejs' + mkdir 'my'
+#     * :DAVIS: at this pt nodejs is installed - could use javascript
+#     * run 'c1.ps1'      -- clones initial repos under /sto and /sto/nodejs/my
 
 
 $UserId = Read-Host -Prompt 'UserId '
