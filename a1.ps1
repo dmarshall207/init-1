@@ -1,3 +1,9 @@
+
+
+# to run this in analogas way to 'source' in bash
+# run as:   . .\a1.ps1
+
+
 $UserId = Read-Host -Prompt 'UserId '
 
 $StoRoot      = "c:\sto"
