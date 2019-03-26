@@ -1,8 +1,13 @@
 
-
 # to run this in analogas way to 'source' in bash
 # run as:   . .\a1.ps1
 
+
+# :d USAGE:
+#     * run this file    -- source this -- establishes env vars
+#     * install git
+#     * run 'b1.ps1'     -- setups up git config
+#     * run 'b1.ps1'     -- clones initial repos under /sto and /sto/nodejs/my
 
 $UserId = Read-Host -Prompt 'UserId '
 
