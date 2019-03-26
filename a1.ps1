@@ -2,12 +2,17 @@
 # to run this in analogas way to 'source' in bash
 # run as:   . .\a1.ps1
 
-
 # :d USAGE:
 #     * run this file    -- source this -- establishes env vars
+#     * run dwnload-git-installer.ps1
+#     * run dwnload-nodejs-binary-x64.ps1
 #     * install git
+#     * reload powershell 
+# add step:  install 'nodejs'
+# add step:  mkdir 'my' -- under 'nodejs'
 #     * run 'b1.ps1'     -- setups up git config
-#     * run 'b1.ps1'     -- clones initial repos under /sto and /sto/nodejs/my
+#     * run 'c1.ps1'     -- clones initial repos under /sto and /sto/nodejs/my
+
 
 $UserId = Read-Host -Prompt 'UserId '
 
