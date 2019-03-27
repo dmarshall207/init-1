@@ -12,6 +12,7 @@ if ((! $env:StoRoot) -or (! (Test-Path $env:StoRoot))) {
 if ((! $env:StoNodejs) -or (! (Test-Path $env:StoNodejs) )) {
     echo "ERR: StoNodejs not setup"
     exit}
+
 if ((! $env:StoMy) -or (! (Test-Path $env:StoMy))) {
     echo "ERR: StoMy not setup"
     exit}

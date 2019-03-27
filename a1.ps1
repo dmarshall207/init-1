@@ -22,19 +22,17 @@
 #
 #add bin/init       -- jump-to
 
-
-
 $env:UserId = Read-Host -Prompt 'UserId '
 
 $env:StoRoot      = "c:\sto"
-$env:StoBin       = "$($StoRoot)\bin"
-$env:StoMyDoc     = "$($StoRoot)\my-doc"
-$env:StoNodejs    = "$($StoRoot)\nodejs"
-$env:StoMy        = "$($StoNodejs)\my"
-$env:Mongo        = "$($StoRoot)\mongo"
-$env:MongoBin     = "$($Mongo)\bin"
-$env:MongoDb      = "$($Mongo)\data\db"
-$env:MongoLog     = "$($Mongo)\data\log"
+$env:StoBin       = "$($env:StoRoot)\bin"
+$env:StoMyDoc     = "$($env:StoRoot)\my-doc"
+$env:StoNodejs    = "$($env:StoRoot)\nodejs"
+$env:StoMy        = "$($env:StoNodejs)\my"
+$env:Mongo        = "$($env:StoRoot)\mongo"
+$env:MongoBin     = "$($env:Mongo)\bin"
+$env:MongoDb      = "$($env:Mongo)\data\db"
+$env:MongoLog     = "$($env:Mongo)\data\log"
 $env:SnippetsDirPath = "C:\Users\public$($UserId)\AppData\Roaming\Code\User\snippets"
 $env:MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
 
