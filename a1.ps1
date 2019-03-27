@@ -2,6 +2,8 @@
 # to run this in analogas way to 'source' in bash
 # run as:   . .\a1.ps1
 
+# 001
+
 # :d USAGE:
 #     * run this file    -- source this -- establishes env vars
 #     * run dwnload-git-installer.ps1
