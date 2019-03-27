@@ -33,7 +33,7 @@ $env:Mongo        = "$($env:StoRoot)\mongo"
 $env:MongoBin     = "$($env:Mongo)\bin"
 $env:MongoDb      = "$($env:Mongo)\data\db"
 $env:MongoLog     = "$($env:Mongo)\data\log"
-$env:SnippetsDirPath = "C:\Users\public$($UserId)\AppData\Roaming\Code\User\snippets"
+$env:SnippetsDirPath = "C:\Users\public$($env:UserId)\AppData\Roaming\Code\User\snippets"
 $env:MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
 
 "UserId           $($env:UserId)"
