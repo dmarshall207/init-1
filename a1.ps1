@@ -16,27 +16,35 @@
 #     * run 'c1.ps1'      -- clones initial repos under /sto and /sto/nodejs/my
 
 
-$UserId = Read-Host -Prompt 'UserId '
+#rename  a1 -> setup-env-vars
+#rename  b1 -> setup-git-config
+#rename  c1 -> setup-sto-repos
+#
+#add bin/init       -- jump-to
 
-$StoRoot      = "c:\sto"
-$StoBin       = "$($StoRoot)\bin"
-$StoMyDoc     = "$($StoRoot)\my-doc"
-$StoNodejs    = "$($StoRoot)\nodejs"
-$StoMy        = "$($StoNodejs)\my"
-$Mongo        = "$($StoRoot)\mongo"
-$MongoBin     = "$($Mongo)\bin"
-$MongoDb      = "$($Mongo)\data\db"
-$MongoLog     = "$($Mongo)\data\log"
-$SnippetsDirPath = "C:\Users\public$($UserId)\AppData\Roaming\Code\User\snippets"
-$MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
 
-"UserId           $($UserId)"
-"StoRoot          $($StoRoot)"
-"StoBin           $($StoBin)"
-"StoMy            $($StoMyDoc)"
-"Mongo            $($StoRoot)\mongo"
-"MongoBin         $($Mongo)\bin"
-"MongoDb          $($Mongo)\data\db"
-"MongoLog         $($Mongo)\data\log"
-"MyEnvVars        $($MyEnvVars)"
-"SnippetsDirPath  $($SnippetsDirPath)"
+
+$env:UserId = Read-Host -Prompt 'UserId '
+
+$env:StoRoot      = "c:\sto"
+$env:StoBin       = "$($StoRoot)\bin"
+$env:StoMyDoc     = "$($StoRoot)\my-doc"
+$env:StoNodejs    = "$($StoRoot)\nodejs"
+$env:StoMy        = "$($StoNodejs)\my"
+$env:Mongo        = "$($StoRoot)\mongo"
+$env:MongoBin     = "$($Mongo)\bin"
+$env:MongoDb      = "$($Mongo)\data\db"
+$env:MongoLog     = "$($Mongo)\data\log"
+$env:SnippetsDirPath = "C:\Users\public$($UserId)\AppData\Roaming\Code\User\snippets"
+$env:MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
+
+"UserId           $($env:UserId)"
+"StoRoot          $($env:StoRoot)"
+"StoBin           $($env:StoBin)"
+"StoMy            $($env:StoMyDoc)"
+"Mongo            $($env:StoRoot)\mongo"
+"MongoBin         $($env:Mongo)\bin"
+"MongoDb          $($env:Mongo)\data\db"
+"MongoLog         $($env:Mongo)\data\log"
+"MyEnvVars        $($env:MyEnvVars)"
+"SnippetsDirPath  $($env:SnippetsDirPath)"
