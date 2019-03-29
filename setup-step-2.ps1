@@ -22,6 +22,13 @@ else {
 if( $env:StoMy -and (Test-Path $env:StoMy)){
     cd $env:StoMy
     git clone https://github.com/dmarshall207/my-dev-support.git
-    git clone https://github.com/dmarshall207/node_modules.git }
+    git clone https://github.com/dmarshall207/node_modules.git 
+    git clone https://github.com/dmarshall207/try-code-001.git
+    git clone https://github.com/dmarshall207/try-code-002.git
+    git clone https://github.com/dmarshall207/try-code-003.git
+    git clone https://github.com/dmarshall207/try-code-004.git
+    git clone https://github.com/dmarshall207/insight-code-001.git
+    git clone https://github.com/dmarshall207/insight-code-002.git
+    }
 else {
     echo "ERR:  StoMy setup repos fail"}
