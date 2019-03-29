@@ -4,10 +4,11 @@ echo ""
 echo "---[ pick setup context"
 echo "1) ua-lib"
 echo "2) other"
-# $env:t = Read-Host -Prompt 'host context: '
-$env:t = '1'
+$env:SetupId = Read-Host -Prompt 'host context: '
+# $env:SetupId = '1'
+echo ""
 
-if ($env:t -eq '1') {
+if ($env:SetupId -eq '1') {
     echo "context:  1) ua-lib"
     if (! (Test-Path "c:\sto")) {mkdir "c:\sto"}
     if (! (Test-Path "c:\sto")) {echo "ERR: failed to insure c:\sto"}
@@ -28,4 +29,4 @@ if ($env:t -eq '1') {
     echo "ERR: no setup yet for this context"    
     exit}
 
-cd "c:\sto\init-1-1"
+# cd "c:\sto\init-1-1"
