@@ -22,11 +22,11 @@ if ($env:SetupId -eq '1') {
     invoke-expression -Command "c:\sto\init-1\setup-env-vars.ps1"
     invoke-expression -Command "c:\sto\init-1\setup-git-config.ps1"
     echo ""
-    echo "... next: setup nodejs then run 'setup-setup-2.ps1'"
+    echo "... next: setup nodejs then run "
+    echo "      setup-git-config.ps1"
+    echo "      setup-setup-2.ps1"
     echo ""
 } else {
     echo ""
     echo "ERR: no setup yet for this context"    
     exit}
-
-# cd "c:\sto\init-1-1"
