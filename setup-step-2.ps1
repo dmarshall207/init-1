@@ -28,6 +28,7 @@ if( $env:StoMy -and (Test-Path $env:StoMy)){
     git clone https://github.com/dmarshall207/try-code-003.git
     git clone https://github.com/dmarshall207/try-code-004.git
     git clone https://github.com/dmarshall207/try-code-005.git
+    git clone https://github.com/dmarshall207/try-code-006.git
     git clone https://github.com/dmarshall207/insight-code-001.git
     git clone https://github.com/dmarshall207/insight-code-002.git
     }
