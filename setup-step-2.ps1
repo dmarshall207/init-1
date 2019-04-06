@@ -21,6 +21,13 @@ else {
     echo "ERR:  StoRoot repo fail"}
 if( $env:StoMy -and (Test-Path $env:StoMy)){
     cd $env:StoMy
+
+    #  dmarshall207/init-1
+    #  dmarshall207/write
+    #  dmarshall207/my-resume
+    #  dmarshall207/road
+    #  dmarshall207/puppeteer-examples
+
     git clone https://github.com/dmarshall207/my-dev-support.git
 
     git clone https://github.com/dmarshall207/node_modules.git 
@@ -34,8 +41,12 @@ if( $env:StoMy -and (Test-Path $env:StoMy)){
     git clone https://github.com/dmarshall207/insight-code-001.git
     git clone https://github.com/dmarshall207/insight-code-002.git
 
-    git clone https://github.com/dmarshall207/app_url-2-pdf.git
     git clone https://github.com/dmarshall207/interesting-001.git
+
+    git clone https://github.com/dmarshall207/focus-code-001.git
+    git clone https://github.com/dmarshall207/focus-code-002.git
+
+    git clone https://github.com/dmarshall207/app_url-2-pdf.git
     }
 else {
     echo "ERR:  StoMy setup repos fail"}
