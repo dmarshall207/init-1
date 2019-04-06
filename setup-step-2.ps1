@@ -47,6 +47,17 @@ if( $env:StoMy -and (Test-Path $env:StoMy)){
     git clone https://github.com/dmarshall207/focus-code-002.git
 
     git clone https://github.com/dmarshall207/app_url-2-pdf.git
+
+    git clone https://github.com/dmarshall207/write.git
+    git clone https://github.com/dmarshall207/my-resume.git
+    git clone https://github.com/dmarshall207/road.git
+    git clone https://github.com/dmarshall207/puppeteer-examples.git
+
+    # ---- these usually put in c:/sto/  -- sometimes
+    # ---- I want them expanded here for backup purposes
+    # git clone https://github.com/dmarshall207/init-1.git
+    # git clone https://github.com/dmarshall207/bin.git
+    # git clone https://github.com/dmarshall207/my-doc.git
     }
 else {
     echo "ERR:  StoMy setup repos fail"}
