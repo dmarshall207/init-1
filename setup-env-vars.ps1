@@ -26,7 +26,12 @@
 #
 #add bin/init       -- jump-to
 
-$env:UserId = Read-Host -Prompt 'UserId '
+if ($env:location -eq 'dcm') {
+    $env:UserId = 'n/a'
+    }
+else {
+    $env:UserId = Read-Host -Prompt 'UserId '
+}
 
 $env:StoRoot      = "c:\sto"
 $env:StoBin       = "$($env:StoRoot)\bin"
@@ -37,9 +42,12 @@ $env:Mongo        = "$($env:StoRoot)\mongo"
 $env:MongoBin     = "$($env:Mongo)\bin"
 $env:MongoDb      = "$($env:Mongo)\data\db"
 $env:MongoLog     = "$($env:Mongo)\data\log"
-$env:SnippetsDirPath = "C:\Users\public$($env:UserId)\AppData\Roaming\Code\User\snippets"
-$env:MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
+if ($env:location -eq 'dcm') {
+    $env:SnippetsDirPath = "C:\Users\User\AppData\Roaming\Code\User\snippets" } 
+else {
+    $env:SnippetsDirPath = "C:\Users\public$($env:UserId)\AppData\Roaming\Code\User\snippets" }
 
+# $env:MyEnvVars    = "StoRoot StoBin StoMyDoc StoMy Mongo MongoBin MongoDB MongoLog SnippetsDirPath"
 "UserId           $($env:UserId)"
 "StoRoot          $($env:StoRoot)"
 "StoBin           $($env:StoBin)"
